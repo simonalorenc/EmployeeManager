@@ -1,0 +1,41 @@
+<nav
+  class="navbar navbar-expand-lg navbar-dark bg-dark px-2 justify-content-center"
+>
+  <div class="nav-container">
+    <a class="navbar-brand" style="color: white">Employee Manager</a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarColor02"
+      aria-controls="navbarColor02"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse option-container" id="navbarColor02">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link add-btn" (click)="onOpenModal()"
+            >Add Employee <span class="sr-only"></span
+          ></a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input
+          (input)="changeSearchValue(key.value)"
+          #key
+          ngModel
+          type="search"
+          ngModel
+          name="key"
+          id="searchName"
+          class="form-control mr-sm-2"
+          placeholder="Search employees..."
+          required
+        />
+      </form>
+    </div>
+  </div>
+</nav>

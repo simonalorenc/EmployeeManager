@@ -1,0 +1,40 @@
+.nav-container {
+    max-width: 1320px;
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+}
+
+.add-btn {
+    cursor: pointer;
+}
+
+.card-title {
+    height: 82px;
+}
+
+@media screen and (max-width: 576px) {
+    .nav-container {
+        max-width: 540px;  
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .nav-container {
+        max-width: 720px;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .nav-container {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 990px) {
+    .option-container {
+        display: flex;
+        justify-content: space-between;
+    }
+}
